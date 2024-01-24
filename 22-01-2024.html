@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSBattle [21/1/2024]</title>
+    <style>
+        body {
+            background-color: #223E1F;
+            display: grid;
+            place-content: center;
+            margin-top: 200px;
+        }
+
+        .c {
+            width: 150px;
+            height: 150px;
+            background: #088540;
+            border-radius: 50%;
+            position: relative;
+            top: -25px;
+        }
+
+        .a {
+            position: absolute;
+            width: 20px;
+            height: 215px;
+            background: #83CF9D;
+            bottom: -10;
+            left: 50%;
+            border-radius: 50px;
+            transform: translateX(-50%)
+        }
+
+        .a::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 70px;
+            background: #83CF9D;
+            bottom: 50%;
+            left: 50%;
+            border-radius: 50px;
+            transform: translate(7px, -23px) rotate(45deg)
+        }
+
+        .a::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 70px;
+            background: #83CF9D;
+            bottom: 50%;
+            right: 50%;
+            border-radius: 50px;
+            transform: translate(-7px, -23px) rotate(-45deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c"></div>
+    <div class="a"></div>
+</body>
+
+</html>
